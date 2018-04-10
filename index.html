@@ -9,7 +9,56 @@
     <title>Yummy Blog - Food Blog Template</title>
 
     <link rel="icon" href="img/core-img/favicon.ico">
+    <style>
+        #preloader {
+        overflow: hidden;
+        background-color: #fff;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999999;
+    }
 
+        .yummy-load {
+            -webkit-animation: 2000ms linear 0s normal none infinite running yummy-load;
+            animation: 2000ms linear 0s normal none infinite running yummy-load;
+            background: transparent none repeat scroll 0 0;
+            border-color: #dddddd #dddddd #fc6c3f;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 3px;
+            height: 40px;
+            left: calc(50% - 20px);
+            position: relative;
+            top: calc(50% - 20px);
+            width: 40px;
+            z-index: 9;
+        }
+
+        @-webkit-keyframes yummy-load {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes yummy-load {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 
 </head>
 
